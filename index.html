@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/1a78aa768a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Style-->
+
+    <link rel="stylesheet" href="./projeto/css/style.css" />
+    <title>Hey Johnny!</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img src="./projeto/img/logo hey johnny.svg" alt="logo Jonathan Maia" />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.github.com/jonathanppmaia/"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a href="#">E-mail</a>
+        </li>
+        <li>
+          <a href="#">Whatsapp</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Jonathan Maia</h1>
+          <h5>Front-End Developer</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-caret-down"></i>
+        </div>
+        <div style="display: none" id="about">
+          <p>
+            Meu nome é Jonathan Maia, sou formado em Administração em transição
+            de carreira para área de tecnologia, cursando engenharia de software
+            na UNOPAR e fazendo cursos de linguagens de programação pela
+            internet. Ao longo da minha trajetória trabalhei com gestão de
+            estoque, rotinas administrativas, rotinas financeiras e fiscal e
+            design gráfico, passando por estágio no Banco do Nordeste a
+            varejista de telefonia móvel. Ao longo dos anos, estudei design
+            gráfico e processos gráficos e sempre fazia uns freelas por conta, e
+            foi nesses pequenos projetos de design gráfico que comecei a estuar
+            linguagem de programação voltado a WEB para complementar possíveis
+            projetos, adicionando web e mobile para suprir as necessidades dos
+            clientes.
+          </p>
+        </div>
+
+        <div>
+          <div class="form">
+            <div>
+              <p>Deixe seu contato comigo !</p>
+            </div>
+            <form action="">
+              <input type="text" placeholder="seu melhor email :)" />
+              <button>Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex">
+        <div>
+          <a
+            href="https://github.com/jonathanppmaia/Posicionando-elementos-com-Flexbox-em-CSS.git"
+            ><img src="./projeto/img/apresentaçãoprojeto.jpg" alt="Flexbox-CSS"
+          /></a>
+
+          <h4>Flex Turismo</h4>
+          <p>
+            Projeto de estudo do curso "Posicionando Elementos com Flexbox em
+            CSS" - Dio
+          </p>
+        </div>
+        <div>
+          <a href="https://github.com/jonathanppmaia/horadodia.git"
+            ><img
+              src="./projeto/img/projeto02.jpg"
+              alt="Hora do Dia - Java Script"
+            />
+            <h4>Hora do dia</h4>
+            <p>
+              Projeto de estudo "Hora do Dia" do curso "Javascript Básico" -
+              Curso em Vídeo
+            </p></a
+          >
+        </div>
+        <div>
+          <a href="https://github.com/jonathanppmaia/websiteebac.git"
+            ><img
+              src="./projeto/img/projeto01.jpg"
+              alt="Hora do Dia - Java Script"
+          /></a>
+          <h4>E.B.A.C Projeto</h4>
+          <p>Projeto de estudo para o curso de html e css - E.B.AC</p>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
